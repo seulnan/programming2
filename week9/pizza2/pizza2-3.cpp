@@ -11,8 +11,9 @@ public:
 // 함수가 객체를 반환하는 경우
 // 객체의 내용이 복사될 뿐 원본이 전달되진않음
 Pizza createPizza(){
-    Pizza p(10);
-    return p;
+    Pizza p(10); // 지역객체생성
+    return p; // 객체 내용이 복사되어 반환됨(함수내부의 지역객체와는 별개임)
+    // 함수가 종료되면 지역객체 p는 소멸하고 복사된 내용은 pizza에 유지됨
 }
 
 int main(){
