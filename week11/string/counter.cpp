@@ -6,6 +6,7 @@ private:
     int value;
 
 public:
+    Counter() : value(0) {}
     ~Counter(){}
     int getValue() const { return value; }
     void setValue(int x) { value = x; }
