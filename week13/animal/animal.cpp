@@ -26,7 +26,7 @@ int main(){
     Animal *a2 = new Cat();
     a2->speak();
 
-    // a1->age = 10; 
+    // a1->age = 10; //오류남 why? a1포인터변수는 엄연히 Animal 클래스를 가리키므로 Dog안에만 있는 age에 접근불가 
     return 0; 
 }
 

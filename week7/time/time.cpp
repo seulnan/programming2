@@ -5,15 +5,7 @@ class Time {
 public:
     int hour;
     int minute;
-
-    Time(){
-        hour = 0;
-        minute = 0;
-    }
-    Time(int h, int m){
-        hour = h;
-        minute = m;
-    }
+    
     // 디폴트 인수를 가진 생성자
     Time(int h=0, int m=0) {
         hour = h;
